@@ -7,8 +7,9 @@ int main()
 	for(int i=1; i < 10; i++)
 
 	{	
-		int k = 3;
-	
+		int l = 2;
+		int lf = 4;
+		int f = 2;	
 	}
 
 	return 0;
