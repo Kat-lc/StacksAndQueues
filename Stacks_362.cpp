@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ostream>
 
 #define MAX 10  
 
@@ -22,7 +23,7 @@ void pop()
 		std::cout << "Stack underflow, too little values." << std::endl;
 	else
 	{
-		std::cout << "Popped element '" << myStack[top] << "'" << std::endl;
+		std::cout <<  myStack[top] << std::endl;
 		top--;
 	}
 }
@@ -31,7 +32,6 @@ void display()
 {
 	if(top >= 0)
 	{
-		std::cout << "Stack elements are:";
 		for(int i = top; i >= 0; i--)
 			std::cout << myStack[i] << " ";
 		std::cout << std::endl;
@@ -66,7 +66,7 @@ int main()
 
 			case 2:
 			{
-				std::cout << "Popping from stack." << std::endl;
+				std::cout << "Popped from stack: " << std::endl;
 				pop();
 				break;
 			}
